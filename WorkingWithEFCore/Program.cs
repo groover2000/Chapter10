@@ -3,6 +3,8 @@
 // Northwind db = new();
 // Console.WriteLine($"Provider {db.Database.ProviderName}");
 
-// QueringCategories();
+QueringCategories();
 // FilteredIncludes();
-QueryingProducts();
+// QueryingProducts();
+// QueryingWithLike();
+// GetRandomProduct();
