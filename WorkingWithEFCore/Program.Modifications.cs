@@ -1,7 +1,7 @@
 using System.Data.Common;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-using WorkingWithEFCore.AutoGenModels;
+using WorkingWithEFCore.Models;
 
 
 
@@ -28,14 +28,16 @@ partial class Program
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
                 }
-                Console.WriteLine($"| {p.ProductId:000} | {p.ProductName,-35} | {p.UnitPrice,8:$#, ##0.00} | {p.UnitsInStock,5} | {p.Discontinued}");
+                Console.WriteLine($"| {p.ProductId:000} | {p.ProductName,-35} | {p.Cost,8:$#, ##0.00} | {p.Stock,5} | {p.Discontinued}");
                 Console.ForegroundColor = previousColor;
 
             }
         }
     }
+
+   
     static (int affected, int productId) AddProduct(
-        int categoryId, string productName, double? price)
+        int categoryId, string productName, decimal? price)
     {
         using (Northwind db = new())
         {
@@ -45,11 +47,17 @@ partial class Program
             {
                 CategoryId = categoryId,
                 ProductName = productName,
-                UnitPrice = price,
-                UnitsInStock = 72
+                Cost = price,
+                Stock = 72
             };
-        }
-        return (1, 2);
-    }
 
+            EntityEntry<Product> entity = db.Products.Add(p);
+            Console.WriteLine($"State: {entity.State}, ProductId: {p.ProductId}");
+
+            int affected = db.SaveChanges();
+            Console.WriteLine($"State {entity.State} ProductId: {p.ProductId}");
+
+            return (affected, p.ProductId);
+        }
+    }
 }

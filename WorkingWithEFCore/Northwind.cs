@@ -14,15 +14,19 @@ public class Northwind : DbContext
         string path = Path.Combine(Environment.CurrentDirectory, "Northwind.db");
         string connection = $"Filename={path}";
 
-        optionsBuilder.UseLazyLoadingProxies();
-        optionsBuilder.LogTo(Console.WriteLine, [RelationalEventId.CommandExecuting] ).EnableSensitiveDataLogging();
+
+        optionsBuilder.LogTo(Console.WriteLine, [RelationalEventId.CommandExecuting]).EnableSensitiveDataLogging();
 
 
         ConsoleColor previousColor = Console.ForegroundColor;
         Console.ForegroundColor = ConsoleColor.DarkYellow;
         Console.WriteLine($"Connection: {connection}");
         Console.ForegroundColor = previousColor;
+
         optionsBuilder.UseSqlite(connection);
+        optionsBuilder.UseLazyLoadingProxies();
+
+        
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -32,6 +36,7 @@ public class Northwind : DbContext
         .IsRequired()
         .HasMaxLength(15);
 
+
         if (Database.ProviderName?.Contains("Sqlite") ?? false)
         {
             modelBuilder.Entity<Product>()
@@ -40,6 +45,8 @@ public class Northwind : DbContext
 
             modelBuilder.Entity<Product>()
             .HasQueryFilter(p => !p.Discontinued);
+
+            
         }
 
     }
