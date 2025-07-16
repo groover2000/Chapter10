@@ -43,8 +43,8 @@ public class Northwind : DbContext
             .Property(product => product.Cost)
             .HasConversion<double>();
 
-            modelBuilder.Entity<Product>()
-            .HasQueryFilter(p => !p.Discontinued);
+            // modelBuilder.Entity<Product>()
+            // .HasQueryFilter(p => !p.Discontinued);
 
             
         }
