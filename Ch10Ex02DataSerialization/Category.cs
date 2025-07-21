@@ -10,4 +10,11 @@ public class Category
     [Column(TypeName = "NTEXT")]
 
     public string? Description { get; set; }
+
+    public virtual ICollection<Product> Products { get; set; } = null!;
+
+    public Category()
+    {
+        Products = new HashSet<Product>();
+    }
 }

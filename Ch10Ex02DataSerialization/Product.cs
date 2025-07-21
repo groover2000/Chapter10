@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Xml.Serialization;
 
 public class Product
 {
@@ -15,6 +16,10 @@ public class Product
 
     [Column(name: "UnitsInStock")]
     public int Count { get; set; }
-    
+
     public bool Discontinued { get; set; }
+    
+    public int CategoryId { get; set; }
+    [XmlIgnore]
+    public virtual Category Category { get; set; } = null!;
 }
