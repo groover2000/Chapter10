@@ -55,6 +55,13 @@ using Microsoft.EntityFrameworkCore;
 
 using (Northwind db = new())
 {
-    IQueryable<Product> products = db.Products;
-    SerializingToXml(products);
+    IQueryable<Category> products = db.Categories;
+    SerializingToXml(products, false);
 }
+
+// Нужно отключать пркоси объекты чтоб работало или делать DTO
+// using (Northwind db = new())
+// {
+//     Product product = db.Products.First();
+//     XmlSerialize(product);
+// }

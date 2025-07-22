@@ -15,7 +15,7 @@ public class Northwind : DbContext
 
         optionsBuilder.EnableSensitiveDataLogging();
         optionsBuilder.LogTo(Console.WriteLine, [RelationalEventId.CommandExecuting]);
-        optionsBuilder.UseLazyLoadingProxies();
+        optionsBuilder.UseLazyLoadingProxies(true); // Нужно отключать прокси если хочешь сериализовать объект через XMLSerializer, либо делать DTO
         optionsBuilder.UseSqlite(connection);
     }
 }

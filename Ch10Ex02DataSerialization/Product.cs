@@ -18,8 +18,10 @@ public class Product
     public int Count { get; set; }
 
     public bool Discontinued { get; set; }
-    
+
     public int CategoryId { get; set; }
     [XmlIgnore]
     public virtual Category Category { get; set; } = null!;
+    
+    public Product(){}
 }
