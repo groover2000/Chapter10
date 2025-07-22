@@ -1,0 +1,674 @@
+[
+  {
+    "CategoryId": 1,
+    "CategoryName": "Beverages",
+    "Description": "Soft drinks, coffees, teas, beers, and ales",
+    "Products": [
+      {
+        "ProductId": 1,
+        "Name": "Chai",
+        "Cost": 18,
+        "Count": 39,
+        "Discontinued": false,
+        "CategoryId": 1
+      },
+      {
+        "ProductId": 2,
+        "Name": "Chang",
+        "Cost": 19,
+        "Count": 17,
+        "Discontinued": false,
+        "CategoryId": 1
+      },
+      {
+        "ProductId": 24,
+        "Name": "Guaran\u00E1 Fant\u00E1stica",
+        "Cost": 4.5,
+        "Count": 20,
+        "Discontinued": true,
+        "CategoryId": 1
+      },
+      {
+        "ProductId": 34,
+        "Name": "Sasquatch Ale",
+        "Cost": 14,
+        "Count": 111,
+        "Discontinued": false,
+        "CategoryId": 1
+      },
+      {
+        "ProductId": 35,
+        "Name": "Steeleye Stout",
+        "Cost": 18,
+        "Count": 20,
+        "Discontinued": false,
+        "CategoryId": 1
+      },
+      {
+        "ProductId": 38,
+        "Name": "C\u00F4te de Blaye",
+        "Cost": 263.5,
+        "Count": 17,
+        "Discontinued": false,
+        "CategoryId": 1
+      },
+      {
+        "ProductId": 39,
+        "Name": "Chartreuse verte",
+        "Cost": 18,
+        "Count": 69,
+        "Discontinued": false,
+        "CategoryId": 1
+      },
+      {
+        "ProductId": 43,
+        "Name": "Ipoh Coffee",
+        "Cost": 46,
+        "Count": 17,
+        "Discontinued": false,
+        "CategoryId": 1
+      },
+      {
+        "ProductId": 67,
+        "Name": "Laughing Lumberjack Lager",
+        "Cost": 14,
+        "Count": 52,
+        "Discontinued": false,
+        "CategoryId": 1
+      },
+      {
+        "ProductId": 70,
+        "Name": "Outback Lager",
+        "Cost": 15,
+        "Count": 15,
+        "Discontinued": false,
+        "CategoryId": 1
+      },
+      {
+        "ProductId": 75,
+        "Name": "Rh\u00F6nbr\u00E4u Klosterbier",
+        "Cost": 7.75,
+        "Count": 125,
+        "Discontinued": false,
+        "CategoryId": 1
+      },
+      {
+        "ProductId": 76,
+        "Name": "Lakkalik\u00F6\u00F6ri",
+        "Cost": 18,
+        "Count": 57,
+        "Discontinued": false,
+        "CategoryId": 1
+      }
+    ]
+  },
+  {
+    "CategoryId": 2,
+    "CategoryName": "Condiments",
+    "Description": "Sweet and savory sauces, relishes, spreads, and seasonings",
+    "Products": [
+      {
+        "ProductId": 3,
+        "Name": "Aniseed Syrup",
+        "Cost": 10,
+        "Count": 13,
+        "Discontinued": false,
+        "CategoryId": 2
+      },
+      {
+        "ProductId": 4,
+        "Name": "Chef Anton\u0027s Cajun Seasoning",
+        "Cost": 22,
+        "Count": 53,
+        "Discontinued": false,
+        "CategoryId": 2
+      },
+      {
+        "ProductId": 5,
+        "Name": "Chef Anton\u0027s Gumbo Mix",
+        "Cost": 21.35,
+        "Count": 0,
+        "Discontinued": true,
+        "CategoryId": 2
+      },
+      {
+        "ProductId": 6,
+        "Name": "Grandma\u0027s Boysenberry Spread",
+        "Cost": 25,
+        "Count": 120,
+        "Discontinued": false,
+        "CategoryId": 2
+      },
+      {
+        "ProductId": 8,
+        "Name": "Northwoods Cranberry Sauce",
+        "Cost": 40,
+        "Count": 6,
+        "Discontinued": false,
+        "CategoryId": 2
+      },
+      {
+        "ProductId": 15,
+        "Name": "Genen Shouyu",
+        "Cost": 15.5,
+        "Count": 39,
+        "Discontinued": false,
+        "CategoryId": 2
+      },
+      {
+        "ProductId": 44,
+        "Name": "Gula Malacca",
+        "Cost": 19.45,
+        "Count": 27,
+        "Discontinued": false,
+        "CategoryId": 2
+      },
+      {
+        "ProductId": 61,
+        "Name": "Sirop d\u0027\u00E9rable",
+        "Cost": 28.5,
+        "Count": 113,
+        "Discontinued": false,
+        "CategoryId": 2
+      },
+      {
+        "ProductId": 63,
+        "Name": "Vegie-spread",
+        "Cost": 43.9,
+        "Count": 24,
+        "Discontinued": false,
+        "CategoryId": 2
+      },
+      {
+        "ProductId": 65,
+        "Name": "Louisiana Fiery Hot Pepper Sauce",
+        "Cost": 21.05,
+        "Count": 76,
+        "Discontinued": false,
+        "CategoryId": 2
+      },
+      {
+        "ProductId": 66,
+        "Name": "Louisiana Hot Spiced Okra",
+        "Cost": 17,
+        "Count": 4,
+        "Discontinued": false,
+        "CategoryId": 2
+      },
+      {
+        "ProductId": 77,
+        "Name": "Original Frankfurter gr\u00FCne So\u00DFe",
+        "Cost": 13,
+        "Count": 32,
+        "Discontinued": false,
+        "CategoryId": 2
+      }
+    ]
+  },
+  {
+    "CategoryId": 3,
+    "CategoryName": "Confections",
+    "Description": "Desserts, candies, and sweet breads",
+    "Products": [
+      {
+        "ProductId": 16,
+        "Name": "Pavlova",
+        "Cost": 17.45,
+        "Count": 29,
+        "Discontinued": false,
+        "CategoryId": 3
+      },
+      {
+        "ProductId": 19,
+        "Name": "Teatime Chocolate Biscuits",
+        "Cost": 9.2,
+        "Count": 25,
+        "Discontinued": false,
+        "CategoryId": 3
+      },
+      {
+        "ProductId": 20,
+        "Name": "Sir Rodney\u0027s Marmalade",
+        "Cost": 81,
+        "Count": 40,
+        "Discontinued": false,
+        "CategoryId": 3
+      },
+      {
+        "ProductId": 21,
+        "Name": "Sir Rodney\u0027s Scones",
+        "Cost": 10,
+        "Count": 3,
+        "Discontinued": false,
+        "CategoryId": 3
+      },
+      {
+        "ProductId": 25,
+        "Name": "NuNuCa Nu\u00DF-Nougat-Creme",
+        "Cost": 14,
+        "Count": 76,
+        "Discontinued": false,
+        "CategoryId": 3
+      },
+      {
+        "ProductId": 26,
+        "Name": "Gumb\u00E4r Gummib\u00E4rchen",
+        "Cost": 31.23,
+        "Count": 15,
+        "Discontinued": false,
+        "CategoryId": 3
+      },
+      {
+        "ProductId": 27,
+        "Name": "Schoggi Schokolade",
+        "Cost": 43.9,
+        "Count": 49,
+        "Discontinued": false,
+        "CategoryId": 3
+      },
+      {
+        "ProductId": 47,
+        "Name": "Zaanse koeken",
+        "Cost": 9.5,
+        "Count": 36,
+        "Discontinued": false,
+        "CategoryId": 3
+      },
+      {
+        "ProductId": 48,
+        "Name": "Chocolade",
+        "Cost": 12.75,
+        "Count": 15,
+        "Discontinued": false,
+        "CategoryId": 3
+      },
+      {
+        "ProductId": 49,
+        "Name": "Maxilaku",
+        "Cost": 20,
+        "Count": 10,
+        "Discontinued": false,
+        "CategoryId": 3
+      },
+      {
+        "ProductId": 50,
+        "Name": "Valkoinen suklaa",
+        "Cost": 16.25,
+        "Count": 65,
+        "Discontinued": false,
+        "CategoryId": 3
+      },
+      {
+        "ProductId": 62,
+        "Name": "Tarte au sucre",
+        "Cost": 49.3,
+        "Count": 17,
+        "Discontinued": false,
+        "CategoryId": 3
+      },
+      {
+        "ProductId": 68,
+        "Name": "Scottish Longbreads",
+        "Cost": 12.5,
+        "Count": 6,
+        "Discontinued": false,
+        "CategoryId": 3
+      }
+    ]
+  },
+  {
+    "CategoryId": 4,
+    "CategoryName": "Dairy Products",
+    "Description": "Cheeses",
+    "Products": [
+      {
+        "ProductId": 11,
+        "Name": "Queso Cabrales",
+        "Cost": 21,
+        "Count": 22,
+        "Discontinued": false,
+        "CategoryId": 4
+      },
+      {
+        "ProductId": 12,
+        "Name": "Queso Manchego La Pastora",
+        "Cost": 38,
+        "Count": 86,
+        "Discontinued": false,
+        "CategoryId": 4
+      },
+      {
+        "ProductId": 31,
+        "Name": "Gorgonzola Telino",
+        "Cost": 12.5,
+        "Count": 0,
+        "Discontinued": false,
+        "CategoryId": 4
+      },
+      {
+        "ProductId": 32,
+        "Name": "Mascarpone Fabioli",
+        "Cost": 32,
+        "Count": 9,
+        "Discontinued": false,
+        "CategoryId": 4
+      },
+      {
+        "ProductId": 33,
+        "Name": "Geitost",
+        "Cost": 2.5,
+        "Count": 112,
+        "Discontinued": false,
+        "CategoryId": 4
+      },
+      {
+        "ProductId": 59,
+        "Name": "Raclette Courdavault",
+        "Cost": 55,
+        "Count": 79,
+        "Discontinued": false,
+        "CategoryId": 4
+      },
+      {
+        "ProductId": 60,
+        "Name": "Camembert Pierrot",
+        "Cost": 34,
+        "Count": 19,
+        "Discontinued": false,
+        "CategoryId": 4
+      },
+      {
+        "ProductId": 69,
+        "Name": "Gudbrandsdalsost",
+        "Cost": 36,
+        "Count": 26,
+        "Discontinued": false,
+        "CategoryId": 4
+      },
+      {
+        "ProductId": 71,
+        "Name": "Flotemysost",
+        "Cost": 21.5,
+        "Count": 26,
+        "Discontinued": false,
+        "CategoryId": 4
+      },
+      {
+        "ProductId": 72,
+        "Name": "Mozzarella di Giovanni",
+        "Cost": 34.8,
+        "Count": 14,
+        "Discontinued": false,
+        "CategoryId": 4
+      }
+    ]
+  },
+  {
+    "CategoryId": 5,
+    "CategoryName": "Grains/Cereals",
+    "Description": "Breads, crackers, pasta, and cereal",
+    "Products": [
+      {
+        "ProductId": 22,
+        "Name": "Gustaf\u0027s Kn\u00E4ckebr\u00F6d",
+        "Cost": 21,
+        "Count": 104,
+        "Discontinued": false,
+        "CategoryId": 5
+      },
+      {
+        "ProductId": 23,
+        "Name": "Tunnbr\u00F6d",
+        "Cost": 9,
+        "Count": 61,
+        "Discontinued": false,
+        "CategoryId": 5
+      },
+      {
+        "ProductId": 42,
+        "Name": "Singaporean Hokkien Fried Mee",
+        "Cost": 14,
+        "Count": 26,
+        "Discontinued": true,
+        "CategoryId": 5
+      },
+      {
+        "ProductId": 52,
+        "Name": "Filo Mix",
+        "Cost": 7,
+        "Count": 38,
+        "Discontinued": false,
+        "CategoryId": 5
+      },
+      {
+        "ProductId": 56,
+        "Name": "Gnocchi di nonna Alice",
+        "Cost": 38,
+        "Count": 21,
+        "Discontinued": false,
+        "CategoryId": 5
+      },
+      {
+        "ProductId": 57,
+        "Name": "Ravioli Angelo",
+        "Cost": 19.5,
+        "Count": 36,
+        "Discontinued": false,
+        "CategoryId": 5
+      },
+      {
+        "ProductId": 64,
+        "Name": "Wimmers gute Semmelkn\u00F6del",
+        "Cost": 33.25,
+        "Count": 22,
+        "Discontinued": false,
+        "CategoryId": 5
+      }
+    ]
+  },
+  {
+    "CategoryId": 6,
+    "CategoryName": "Meat/Poultry",
+    "Description": "Prepared meats",
+    "Products": [
+      {
+        "ProductId": 9,
+        "Name": "Mishi Kobe Niku",
+        "Cost": 97,
+        "Count": 29,
+        "Discontinued": true,
+        "CategoryId": 6
+      },
+      {
+        "ProductId": 17,
+        "Name": "Alice Mutton",
+        "Cost": 39,
+        "Count": 0,
+        "Discontinued": true,
+        "CategoryId": 6
+      },
+      {
+        "ProductId": 29,
+        "Name": "Th\u00FCringer Rostbratwurst",
+        "Cost": 123.79,
+        "Count": 0,
+        "Discontinued": true,
+        "CategoryId": 6
+      },
+      {
+        "ProductId": 53,
+        "Name": "Perth Pasties",
+        "Cost": 32.8,
+        "Count": 0,
+        "Discontinued": true,
+        "CategoryId": 6
+      },
+      {
+        "ProductId": 54,
+        "Name": "Tourti\u00E8re",
+        "Cost": 7.45,
+        "Count": 21,
+        "Discontinued": false,
+        "CategoryId": 6
+      },
+      {
+        "ProductId": 55,
+        "Name": "P\u00E2t\u00E9 chinois",
+        "Cost": 24,
+        "Count": 115,
+        "Discontinued": false,
+        "CategoryId": 6
+      }
+    ]
+  },
+  {
+    "CategoryId": 7,
+    "CategoryName": "Produce",
+    "Description": "Dried fruit and bean curd",
+    "Products": [
+      {
+        "ProductId": 7,
+        "Name": "Uncle Bob\u0027s Organic Dried Pears",
+        "Cost": 30,
+        "Count": 15,
+        "Discontinued": false,
+        "CategoryId": 7
+      },
+      {
+        "ProductId": 14,
+        "Name": "Tofu",
+        "Cost": 23.25,
+        "Count": 35,
+        "Discontinued": false,
+        "CategoryId": 7
+      },
+      {
+        "ProductId": 28,
+        "Name": "R\u00F6ssle Sauerkraut",
+        "Cost": 45.6,
+        "Count": 26,
+        "Discontinued": true,
+        "CategoryId": 7
+      },
+      {
+        "ProductId": 51,
+        "Name": "Manjimup Dried Apples",
+        "Cost": 53,
+        "Count": 20,
+        "Discontinued": false,
+        "CategoryId": 7
+      },
+      {
+        "ProductId": 74,
+        "Name": "Longlife Tofu",
+        "Cost": 10,
+        "Count": 4,
+        "Discontinued": false,
+        "CategoryId": 7
+      }
+    ]
+  },
+  {
+    "CategoryId": 8,
+    "CategoryName": "Seafood",
+    "Description": "Seaweed and fish",
+    "Products": [
+      {
+        "ProductId": 10,
+        "Name": "Ikura",
+        "Cost": 31,
+        "Count": 31,
+        "Discontinued": false,
+        "CategoryId": 8
+      },
+      {
+        "ProductId": 13,
+        "Name": "Konbu",
+        "Cost": 6,
+        "Count": 24,
+        "Discontinued": false,
+        "CategoryId": 8
+      },
+      {
+        "ProductId": 18,
+        "Name": "Carnarvon Tigers",
+        "Cost": 62.5,
+        "Count": 42,
+        "Discontinued": false,
+        "CategoryId": 8
+      },
+      {
+        "ProductId": 30,
+        "Name": "Nord-Ost Matjeshering",
+        "Cost": 25.89,
+        "Count": 10,
+        "Discontinued": false,
+        "CategoryId": 8
+      },
+      {
+        "ProductId": 36,
+        "Name": "Inlagd Sill",
+        "Cost": 19,
+        "Count": 112,
+        "Discontinued": false,
+        "CategoryId": 8
+      },
+      {
+        "ProductId": 37,
+        "Name": "Gravad lax",
+        "Cost": 26,
+        "Count": 11,
+        "Discontinued": false,
+        "CategoryId": 8
+      },
+      {
+        "ProductId": 40,
+        "Name": "Boston Crab Meat",
+        "Cost": 18.4,
+        "Count": 123,
+        "Discontinued": false,
+        "CategoryId": 8
+      },
+      {
+        "ProductId": 41,
+        "Name": "Jack\u0027s New England Clam Chowder",
+        "Cost": 9.65,
+        "Count": 85,
+        "Discontinued": false,
+        "CategoryId": 8
+      },
+      {
+        "ProductId": 45,
+        "Name": "Rogede sild",
+        "Cost": 9.5,
+        "Count": 5,
+        "Discontinued": false,
+        "CategoryId": 8
+      },
+      {
+        "ProductId": 46,
+        "Name": "Spegesild",
+        "Cost": 12,
+        "Count": 95,
+        "Discontinued": false,
+        "CategoryId": 8
+      },
+      {
+        "ProductId": 58,
+        "Name": "Escargots de Bourgogne",
+        "Cost": 13.25,
+        "Count": 62,
+        "Discontinued": false,
+        "CategoryId": 8
+      },
+      {
+        "ProductId": 73,
+        "Name": "R\u00F6d Kaviar",
+        "Cost": 15,
+        "Count": 101,
+        "Discontinued": false,
+        "CategoryId": 8
+      }
+    ]
+  }
+]

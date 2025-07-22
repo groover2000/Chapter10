@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using System.Xml.Serialization;
 
 public class Product
@@ -21,6 +22,7 @@ public class Product
 
     public int CategoryId { get; set; }
     [XmlIgnore]
+    [JsonIgnore]
     public virtual Category Category { get; set; } = null!;
     
     public Product(){}

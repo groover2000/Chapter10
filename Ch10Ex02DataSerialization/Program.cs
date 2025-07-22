@@ -53,11 +53,11 @@ using Microsoft.EntityFrameworkCore;
 //     }
 // }
 
-using (Northwind db = new())
-{
-    IQueryable<Category> products = db.Categories;
-    SerializingToXml(products, false);
-}
+// using (Northwind db = new())
+// {
+//     IQueryable<Category> products = db.Categories;
+//     SerializingToXml(products, false);
+// }
 
 // Нужно отключать пркоси объекты чтоб работало или делать DTO
 // using (Northwind db = new())
@@ -65,3 +65,10 @@ using (Northwind db = new())
 //     Product product = db.Products.First();
 //     XmlSerialize(product);
 // }
+
+
+using (Northwind db = new())
+{
+    IQueryable<Category> categories = db.Categories;
+    JsonSerialize(categories);
+}

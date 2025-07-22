@@ -1,6 +1,7 @@
-using System.Data.SqlTypes;
+
 using System.Xml;
 using System.Xml.Serialization;
+using System.Text.Json;
 
 delegate void WriteDelegate(string name, string? value);
 partial class Program
@@ -62,10 +63,26 @@ partial class Program
     {
         string name = "file.xml";
         string path = Path.Combine(Environment.CurrentDirectory, name);
-        XmlSerializer xs = new(typeof(Product), new[] { product.GetType() });
+        XmlSerializer xs = new(typeof(Product));
         using (FileStream stream = File.Create(path))
         {
             xs.Serialize(stream, product);
         }
+    }
+
+    static void JsonSerialize(IQueryable<Category> categories)
+    {
+        string path = Path.Combine(Environment.CurrentDirectory, "file.json");
+
+        using (Stream jsonStream = File.Create(path))
+        {
+            JsonSerializer.Serialize(jsonStream, categories, new JsonSerializerOptions()
+            {
+                WriteIndented = true,
+                // ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve  // Нужно для разрешения циклических ссылок либо убрать свсязь принудительно через [JsonIgnore]
+            });
+
+        }
+
     }
 }
